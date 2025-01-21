@@ -7,4 +7,4 @@ require_once 'src/Voiture.php';
 $voiture1 = new Voiture(marque:"Fiat", couleur:"rouge");
 $voiture2 = new Voiture(marque:"Dacia", couleur:"bleu");
 
-var_dump($voiture1, $voiture2);
+var_dump($voiture1->couleur);

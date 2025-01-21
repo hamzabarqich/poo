@@ -11,5 +11,10 @@ class Voiture {
         $this->marque = $marque;
         $this->couleur = $couleur;
     }
+
+    public function __toString()
+    {
+        return "Voiture : " . $this->marque . " , Couleur: " . $this->couleur;
+    }
     
 }
