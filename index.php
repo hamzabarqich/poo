@@ -4,7 +4,8 @@ require_once 'src/Voiture.php';
 
 //Instanciation
 
-$voiture1 = new Voiture(marque:"Fiat", couleur:"rouge");
-$voiture2 = new Voiture(marque:"Dacia", couleur:"bleu");
+$voiture1 = new Voiture(brand:"Fiat", color:"rouge");
+$voiture2 = new Voiture(brand:"Dacia", color:"bleu");
 
-var_dump($voiture1->couleur);
+$voiture1->setCouleur(couleur:"vert");
+echo $voiture1->getCouleur();
