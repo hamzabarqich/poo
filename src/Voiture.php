@@ -1,6 +1,6 @@
 <?php
 
-class Voiture {
+class Voiture   {
     //Attributs
     private $marque;
     private $couleur;
@@ -8,7 +8,7 @@ class Voiture {
     //Méthodes
     public function __construct($brand, $color)
     {
-        $this->marque = $brand;
+        $this->marque = $brand; 
         $this->couleur = $color;
     }
 
@@ -17,9 +17,11 @@ class Voiture {
         return "Voiture : " . $this->marque . " , Couleur: " . $this->couleur;
     }
 
-    // GET / SET
-
-    // LECTURE (GET)
+    /**
+     * GET / SET 
+     * LECTURE (GET)
+     */  
+    
     public function getMarque()
     {
         return $this->marque;
@@ -41,3 +43,4 @@ class Voiture {
         $this->couleur = $couleur;
     }
 }
+
